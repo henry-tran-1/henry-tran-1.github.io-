@@ -2,7 +2,12 @@
 export default {
   content: ['./index.html', './client/**/*.tsx'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        heading: ['Lora'],
+        body: ['Open Sans'],
+      },
+    },
   },
   plugins: [],
 }
