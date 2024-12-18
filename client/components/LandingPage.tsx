@@ -1,7 +1,7 @@
 export default function LandingPage() {
   return (
     <div className="flex h-screen items-center justify-center">
-      <div className="flex flex-col items-center justify-center text-center">
+      <div className="flex w-4/6 flex-col items-center justify-center text-center">
         <div className="mb-8 flex items-center justify-center">
           <img
             src="Public/images/profile_picture.png"
@@ -9,7 +9,9 @@ export default function LandingPage() {
             className="w-[400px]"
           />
           <section className="mx-16">
-            <p className="font-md my-2 font-heading text-7xl">henry tran</p>
+            <p className="font-md my-2 text-left font-heading text-7xl">
+              henry tran
+            </p>
             <p className="text-right font-body text-xl font-thin">
               FULL-STACK SOFTWARE DEVELOPER
             </p>
