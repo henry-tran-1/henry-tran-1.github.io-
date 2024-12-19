@@ -18,6 +18,7 @@ export default function About() {
             </p>
           </section>
         </div>
+        <p>Link to CV</p>
         <h1 className="font-heading text-7xl">toolkit</h1>
         <section className="flex flex-wrap gap-2">
           <p>Javascript</p>
