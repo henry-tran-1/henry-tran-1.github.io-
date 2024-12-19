@@ -10,9 +10,22 @@ export default function About() {
             className="w-[400px]"
           />
           <section className="mx-16">
-            <p className="font-body text-xl">About me text</p>
+            <p className="font-body text-xl">
+              About me text. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Suscipit, repudiandae, itaque inventore unde asperiores
+              fugit blanditiis nobis architecto doloremque ad tempore rem maxime
+              alias voluptatibus earum eveniet numquam obcaecati nam!
+            </p>
           </section>
         </div>
+        <h1 className="font-heading text-7xl">toolkit</h1>
+        <section className="flex flex-wrap gap-2">
+          <p>Javascript</p>
+          <p>Typescript</p>
+          <p>React</p>
+          <p>Express</p>
+          <p>Node.js</p>
+        </section>
       </div>
     </div>
   )
