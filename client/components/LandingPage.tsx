@@ -4,7 +4,7 @@ export default function LandingPage() {
       <div className="flex w-4/6 flex-col items-center justify-center text-center">
         <div className="mb-8 flex items-center justify-center">
           <img
-            src="Public/images/profile_picture.png"
+            src="/images/profile_picture.png"
             alt="profile of henry"
             className="w-[400px]"
           />

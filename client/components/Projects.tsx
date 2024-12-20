@@ -30,10 +30,10 @@ export default function Projects() {
               Family Mapper
             </h1>
             <p className="text-left font-body text-lg font-thin">
-              Text about the project. Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Necessitatibus omnis fugit esse rem! Saepe dolor
-              voluptatem amet sed dolore sequi harum aut molestiae culpa
-              doloribus rem veritatis, officiis mollitia officia.
+              Family mapper is an interactive app that enables users to
+              visualise and expand their family tree. It makes use of recursive
+              data querying to dynamically render connections between all family
+              members.
             </p>
             <div className="text-md m-2 flex w-full justify-center gap-4 font-body font-semibold">
               <button className="rounded-md bg-amber-400 p-1 ">
@@ -43,7 +43,7 @@ export default function Projects() {
             </div>
           </div>
           <img
-            src="Public/images/biteshare_3.png"
+            src="/images/biteshare_3.png"
             alt="bite share homepage"
             className="ml-8 h-[250px]"
           />
@@ -53,7 +53,7 @@ export default function Projects() {
         <section className="my-20 flex w-full items-center justify-around">
           <div className="relative">
             <img
-              src={`Public/images/biteshare_${biteshare}.png`}
+              src={`/images/biteshare_${biteshare}.png`}
               alt="bite share homepage"
               className="mr-8 h-[250px]"
             />
@@ -61,18 +61,14 @@ export default function Projects() {
               className="absolute -right-2 top-1/2"
               onClick={handleBiteshareNext}
             >
-              <img
-                src="Public/images/right.svg"
-                alt="next button"
-                className="w-8"
-              />
+              <img src="/images/right.svg" alt="next button" className="w-8" />
             </button>
             <button
               className="absolute -left-10 top-1/2"
               onClick={handleBitesharePrev}
             >
               <img
-                src="Public/images/left.svg"
+                src="/images/left.svg"
                 alt="previous button"
                 className="w-8"
               />
@@ -84,10 +80,10 @@ export default function Projects() {
             </h2>
             <h1 className="my-4 text-left font-heading text-4xl">Bite Share</h1>
             <p className="text-left font-body text-lg font-thin">
-              Text about the project. Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Necessitatibus omnis fugit esse rem! Saepe dolor
-              voluptatem amet sed dolore sequi harum aut molestiae culpa
-              doloribus rem veritatis, officiis mollitia officia.
+              Bite Share is a web application designed to foster community
+              connections by matching individuals or organizations willing to
+              donate food with those in need. It features a static messaging
+              system for simple communication, built with basic CRUD operations.
             </p>
             <div className="text-md m-2 flex w-full justify-center gap-4 font-body font-semibold">
               <button className="rounded-md bg-amber-400 p-1">View Live</button>
@@ -119,7 +115,7 @@ export default function Projects() {
             </div>
           </div>
           <img
-            src="Public/images/bite_share_1.png"
+            src="/images/bite_share_1.png"
             alt="bite share homepage"
             className="ml-8 h-[250px]"
           />

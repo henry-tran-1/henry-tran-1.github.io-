@@ -5,7 +5,7 @@ export default function About() {
         <h1 className="font-heading text-7xl">about</h1>
         <div className="mb-8 flex items-center justify-center">
           <img
-            src="Public/images/aboutme_picture.png"
+            src="/images/aboutme_picture.png"
             alt="henry in the garden"
             className="w-[400px]"
           />
