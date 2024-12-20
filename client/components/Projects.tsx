@@ -102,10 +102,8 @@ export default function Projects() {
               Task Manager
             </h1>
             <p className="text-left font-body text-lg font-thin">
-              Text about the project. Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Necessitatibus omnis fugit esse rem! Saepe dolor
-              voluptatem amet sed dolore sequi harum aut molestiae culpa
-              doloribus rem veritatis, officiis mollitia officia.
+              Task manager is a simple productivity app designed to help users
+              stay organised and on track of their tasks.
             </p>
             <div className="text-md m-2 flex w-full justify-center gap-4 font-body font-semibold">
               <button className="rounded-md bg-amber-400 p-1 ">
