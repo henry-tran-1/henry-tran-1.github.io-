@@ -119,7 +119,8 @@ export default function Projects() {
               Bite Share is a web application designed to foster community
               connections by matching individuals or organizations willing to
               donate food with those in need. It features a static messaging
-              system for simple communication, built with basic CRUD operations.
+              system for simple communication, built using RESTful API CRUD
+              operations.
             </p>
             <div className="text-md m-2 flex w-full justify-center gap-4 font-body font-semibold">
               <button className="rounded-md bg-amber-400 p-1">View Live</button>

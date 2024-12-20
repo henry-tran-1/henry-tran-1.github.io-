@@ -25,13 +25,78 @@ export default function About() {
           </section>
         </div>
         <p>Link to CV</p>
-        <h1 className="font-heading text-7xl">toolkit</h1>
-        <section className="flex flex-wrap gap-2">
-          <p>Javascript</p>
-          <p>Typescript</p>
-          <p>React</p>
-          <p>Express</p>
-          <p>Node.js</p>
+
+        {/* Toolkit Section */}
+        <h1 className="m-10 font-heading text-7xl">toolkit</h1>
+        <section className="flex flex-wrap">
+          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+            <img
+              src="/images/toolkit/javascript-color.svg"
+              alt="javascript logo"
+            />
+            <p className="mt-1 font-body text-lg">Javascript</p>
+          </div>
+          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+            <img
+              src="/images/toolkit/typescript-color.svg"
+              alt="typescript logo"
+            />
+            <p className="mt-1 font-body text-lg">Typescript</p>
+          </div>
+          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+            <img src="/images/toolkit/react-color.svg" alt="react logo" />
+            <p className="mt-1 font-body text-lg">React</p>
+          </div>
+          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+            <img src="/images/toolkit/html5-color.svg" alt="HTML logo" />
+            <p className="mt-1 font-body text-lg">HTML5</p>
+          </div>
+          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+            <img src="/images/toolkit/css3-color.svg" alt="CSS logo" />
+            <p className="mt-1 font-body text-lg">CSS3</p>
+          </div>
+          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+            <img
+              src="/images/toolkit/tailwindcss-color.svg"
+              alt="tailwind logo"
+            />
+            <p className="mt-1 font-body text-lg">Tailwind CSS</p>
+          </div>
+          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+            <img src="/images/toolkit/nodedotjs-color.svg" alt="node logo" />
+            <p className="mt-1 font-body text-lg">Node.js</p>
+          </div>
+          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+            <img src="/images/toolkit/express-color.svg" alt="express logo" />
+            <p className="mt-1 font-body text-lg">Express.js</p>
+          </div>
+          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+            <img src="/images/toolkit/sqlite-color.svg" alt="sqlite logo" />
+            <p className="mt-1 font-body text-lg">Sqlite</p>
+          </div>
+          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+            <img src="/images/toolkit/Knex.js.svg" alt="knex logo" />
+            <p className="mt-1 font-body text-lg">Knex.js</p>
+          </div>
+          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+            <img src="/images/toolkit/auth0-color.svg" alt="auth0 logo" />
+            <p className="mt-1 font-body text-lg">Auth0</p>
+          </div>
+          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+            <img src="/images/toolkit/vitest-color.svg" alt="vitest logo" />
+            <p className="mt-1 font-body text-lg">Vitest</p>
+          </div>
+          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+            <img
+              src="/images/toolkit/storybook-color.svg"
+              alt="storybook logo"
+            />
+            <p className="mt-1 font-body text-lg">Storybook</p>
+          </div>
+          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+            <img src="/images/toolkit/python-color.svg" alt="python logo" />
+            <p className="mt-1 font-body text-lg">Python</p>
+          </div>
         </section>
       </div>
     </div>
