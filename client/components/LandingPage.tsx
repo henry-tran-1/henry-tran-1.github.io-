@@ -1,10 +1,15 @@
 export default function LandingPage() {
+  const handleScroll = () => {
+    const element = document.getElementById('projects')
+    element?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
-    <div className="flex h-screen items-center justify-center">
+    <div id="home" className="flex h-screen items-center justify-center">
       <div className="flex w-4/6 flex-col items-center justify-center text-center">
         <div className="mb-8 flex items-center justify-center">
           <img
-            src="/images/profile_picture.png"
+            src="/images/profile_picture_bg.jpg"
             alt="profile of henry"
             className="w-[400px]"
           />
@@ -25,7 +30,10 @@ export default function LandingPage() {
             now bringing my sharp focus and passion to the world of tech
           </p>
         </div>
-        <button className="h-10 w-10 rounded-full border-2 border-black text-amber-400">
+        <button
+          className="h-10 w-10 rounded-full border-2 border-black text-amber-400 "
+          onClick={handleScroll}
+        >
           v
         </button>
       </div>

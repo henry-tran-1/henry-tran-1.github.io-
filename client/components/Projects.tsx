@@ -1,25 +1,43 @@
 import { useState } from 'react'
 
 export default function Projects() {
-  const [biteshare, setBiteshare] = useState(0)
+  const [biteShare, setBiteShare] = useState(0)
+  const [familyMapper, setFamilyMapper] = useState(0)
 
+  // next and prev buttons for family mapper carousel
+  const handleFamilyMapperNext = () => {
+    setFamilyMapper((prev) => {
+      if (prev === 3) return 0
+      else return prev + 1
+    })
+    console.log(familyMapper)
+  }
+  const handleFamilyMapperPrev = () => {
+    setFamilyMapper((prev) => {
+      if (prev === 0) return 3
+      else return prev - 1
+    })
+  }
+
+  // next and prev buttons for bite share carousel
   const handleBiteshareNext = () => {
-    setBiteshare((prev) => {
+    setBiteShare((prev) => {
       if (prev === 3) return 0
       else return prev + 1
     })
   }
   const handleBitesharePrev = () => {
-    setBiteshare((prev) => {
+    setBiteShare((prev) => {
       if (prev === 0) return 3
       else return prev - 1
     })
   }
 
   return (
-    <div className="flex w-full items-center justify-center">
+    <div id="projects" className="flex w-full items-center justify-center">
       <div className="flex w-4/6 flex-col items-center text-center">
         <h1 className="mb-2 font-heading text-7xl">projects</h1>
+
         {/* Family Mapper */}
         <section className="my-20 flex w-full items-center justify-around">
           <div className="w-[500px]">
@@ -42,20 +60,38 @@ export default function Projects() {
               <button className="rounded-md bg-amber-400 p-1">GitHub</button>
             </div>
           </div>
-          <img
-            src="/images/biteshare_3.png"
-            alt="bite share homepage"
-            className="ml-8 h-[250px]"
-          />
+          <div className="relative w-[350px]">
+            <img
+              src={`/images/family_mapper_${familyMapper}.jpg`}
+              alt="family mapper gallery"
+              className="ml-8 "
+            />
+            <button
+              className="absolute -right-10 top-1/2"
+              onClick={handleFamilyMapperNext}
+            >
+              <img src="/images/right.svg" alt="next button" className="w-8" />
+            </button>
+            <button
+              className="absolute -left-2 top-1/2"
+              onClick={handleFamilyMapperPrev}
+            >
+              <img
+                src="/images/left.svg"
+                alt="previous button"
+                className="w-8"
+              />
+            </button>
+          </div>
         </section>
 
         {/* Bite Share */}
         <section className="my-20 flex w-full items-center justify-around">
-          <div className="relative">
+          <div className="relative w-[450px]">
             <img
-              src={`/images/biteshare_${biteshare}.png`}
-              alt="bite share homepage"
-              className="mr-8 h-[250px]"
+              src={`/images/bite_share_${biteShare}.jpg`}
+              alt="bite share gallery"
+              className="mr-8"
             />
             <button
               className="absolute -right-2 top-1/2"
@@ -113,8 +149,8 @@ export default function Projects() {
             </div>
           </div>
           <img
-            src="/images/bite_share_1.png"
-            alt="bite share homepage"
+            src="/images/bite_share_1.jpg"
+            alt="task manager gallery"
             className="ml-8 h-[250px]"
           />
         </section>
