@@ -75,11 +75,15 @@ export default function Projects() {
               data querying to dynamically render connections between all family
               members.
             </p>
-            <div className="text-md m-2 flex w-full justify-center gap-4 font-body font-semibold">
-              <button className="rounded-md bg-amber-400 p-1 ">
-                View Live
-              </button>
-              <button className="rounded-md bg-amber-400 p-1">GitHub</button>
+            <div className="text-md mt-4 flex w-full justify-start gap-4 font-body font-semibold">
+              <a
+                href="https://github.com/henry-tran-1/family-mapper"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-md bg-gray-800 p-1 text-white hover:text-amber-400"
+              >
+                GitHub
+              </a>
             </div>
           </div>
           <div className="relative w-[350px]">
@@ -144,9 +148,23 @@ export default function Projects() {
               system for simple communication, built using RESTful API CRUD
               operations.
             </p>
-            <div className="text-md m-2 flex w-full justify-center gap-4 font-body font-semibold">
-              <button className="rounded-md bg-amber-400 p-1">View Live</button>
-              <button className="rounded-md bg-amber-400 p-1">GitHub</button>
+            <div className="text-md mt-2 flex w-full justify-start gap-4 font-body font-semibold">
+              <a
+                href="https://bite-share-pohutukawa24.devacademy.nz/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-md bg-gray-800 p-1 text-white hover:text-amber-400 "
+              >
+                View Live
+              </a>
+              <a
+                href="https://github.com/henry-tran-1/bite-share"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-md bg-gray-800 p-1 text-white hover:text-amber-400"
+              >
+                GitHub
+              </a>
             </div>
           </div>
         </section>
@@ -164,11 +182,10 @@ export default function Projects() {
               Task manager is a simple productivity app designed to help users
               stay organised and on track of their tasks.
             </p>
-            <div className="text-md m-2 flex w-full justify-center gap-4 font-body font-semibold">
-              <button className="rounded-md bg-amber-400 p-1 ">
-                View Live
+            <div className="text-md mt-2 flex w-full justify-start gap-4 font-body font-semibold">
+              <button className="rounded-md bg-gray-800 p-1 text-white hover:text-amber-400">
+                GitHub
               </button>
-              <button className="rounded-md bg-amber-400 p-1">GitHub</button>
             </div>
           </div>
           <div className="relative">

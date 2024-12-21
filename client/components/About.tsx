@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div id="about" className="flex items-center justify-center ">
       <div className="flex w-4/6 flex-col items-center justify-center text-center">
-        <h1 className="mb-10 font-heading text-7xl">about</h1>
+        <h1 className="mb-10 font-heading text-7xl">about me</h1>
         <div className="mb-8 flex items-start justify-center">
           <img
             src="/images/about_me.jpg"
