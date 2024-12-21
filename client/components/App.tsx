@@ -10,8 +10,12 @@ function App() {
   return (
     <div className="min-h-[2000px] space-y-4 scroll-smooth bg-[#f0f0f0] pt-6">
       <div className="flex justify-between">
-        <Links />
-        <Navbar />
+        <div className="ml-10">
+          <Links />
+        </div>
+        <div className="mr-10 ">
+          <Navbar />
+        </div>
       </div>
       <LandingPage />
       <Projects />

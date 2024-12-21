@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+
 export default function LandingPage() {
   const handleScroll = () => {
     const element = document.getElementById('projects')
@@ -22,7 +25,7 @@ export default function LandingPage() {
             </p>
           </section>
         </div>
-        <div>
+        <div className="mt-4">
           <p className="text-left font-heading text-2xl opacity-60">
             previously an optometrist...
           </p>
@@ -30,11 +33,11 @@ export default function LandingPage() {
             now bringing my sharp focus and passion to the world of tech
           </p>
         </div>
-        <button
-          className="h-10 w-10 rounded-full border-2 border-black text-amber-400 "
-          onClick={handleScroll}
-        >
-          v
+        <button onClick={handleScroll} className="mt-8">
+          <FontAwesomeIcon
+            icon={faCaretDown}
+            className="animate-bounceChevron text-4xl text-amber-400 duration-100 hover:text-black"
+          />
         </button>
       </div>
     </div>

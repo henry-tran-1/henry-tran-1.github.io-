@@ -1,8 +1,16 @@
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
 export default function Projects() {
   const [biteShare, setBiteShare] = useState(0)
   const [familyMapper, setFamilyMapper] = useState(0)
+  const [taskManager, setTaskManager] = useState(0)
+
+  const handleScroll = () => {
+    const element = document.getElementById('about')
+    element?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   // next and prev buttons for family mapper carousel
   const handleFamilyMapperNext = () => {
@@ -29,6 +37,20 @@ export default function Projects() {
   const handleBitesharePrev = () => {
     setBiteShare((prev) => {
       if (prev === 0) return 3
+      else return prev - 1
+    })
+  }
+
+  // next and prev buttons for task manager carousel
+  const handleTaskManagerNext = () => {
+    setTaskManager((prev) => {
+      if (prev === 2) return 0
+      else return prev + 1
+    })
+  }
+  const handleTaskManagerPrev = () => {
+    setTaskManager((prev) => {
+      if (prev === 0) return 2
       else return prev - 1
     })
   }
@@ -130,7 +152,7 @@ export default function Projects() {
         </section>
 
         {/* Task Manager */}
-        <section className="my-20 flex w-full items-center justify-around">
+        <section className="mb-10 mt-20 flex w-full items-center justify-around">
           <div className="w-[500px]">
             <h2 className="my-8 text-left font-heading text-2xl font-thin">
               PERSONAL PROJECT
@@ -149,12 +171,36 @@ export default function Projects() {
               <button className="rounded-md bg-amber-400 p-1">GitHub</button>
             </div>
           </div>
-          <img
-            src="/images/bite_share_1.jpg"
-            alt="task manager gallery"
-            className="ml-8 h-[250px]"
-          />
+          <div className="relative">
+            <img
+              src={`/images/task_manager_${taskManager}.png`}
+              alt="task manager gallery"
+              className="ml-8 h-[250px]"
+            />
+            <button
+              className="absolute -right-10 top-1/2"
+              onClick={handleTaskManagerNext}
+            >
+              <img src="/images/right.svg" alt="next button" className="w-8" />
+            </button>
+            <button
+              className="absolute -left-2 top-1/2"
+              onClick={handleTaskManagerPrev}
+            >
+              <img
+                src="/images/left.svg"
+                alt="previous button"
+                className="w-8"
+              />
+            </button>
+          </div>
         </section>
+        <button onClick={handleScroll} className="mb-40 mt-8">
+          <FontAwesomeIcon
+            icon={faCaretDown}
+            className="animate-bounceChevron text-4xl text-amber-400 duration-100 hover:text-black"
+          />
+        </button>
       </div>
     </div>
   )

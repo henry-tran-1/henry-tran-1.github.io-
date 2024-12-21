@@ -1,11 +1,19 @@
 export default function Navbar() {
   return (
-    <div className="mr-10">
+    <div>
       <section className="flex justify-end gap-4 font-body font-thin">
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" className="hover:font-semibold">
+          Home
+        </a>
+        <a href="#projects" className="hover:font-semibold">
+          Projects
+        </a>
+        <a href="#about" className="hover:font-semibold">
+          About
+        </a>
+        <a href="#contact" className="hover:font-semibold">
+          Contact
+        </a>
       </section>
     </div>
   )
