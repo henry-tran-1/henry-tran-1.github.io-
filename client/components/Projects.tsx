@@ -80,7 +80,7 @@ export default function Projects() {
                 href="https://github.com/henry-tran-1/family-mapper"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-md bg-gray-800 p-1 text-white hover:text-amber-400"
+                className="inline-block rounded-md bg-gray-800 p-1 text-white hover:bg-amber-400 hover:text-gray-800"
               >
                 GitHub
               </a>
@@ -155,7 +155,7 @@ export default function Projects() {
                 href="https://bite-share-pohutukawa24.devacademy.nz/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md bg-gray-800 p-1 text-white hover:text-amber-400 "
+                className="rounded-md bg-gray-800 p-1 text-white hover:bg-amber-400 hover:text-gray-800 "
               >
                 View Live
               </a>
@@ -163,7 +163,7 @@ export default function Projects() {
                 href="https://github.com/henry-tran-1/bite-share"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md bg-gray-800 p-1 text-white hover:text-amber-400"
+                className="rounded-md bg-gray-800 p-1 text-white hover:bg-amber-400 hover:text-gray-800"
               >
                 GitHub
               </a>
@@ -187,7 +187,7 @@ export default function Projects() {
               stay organised and on track of their tasks.
             </p>
             <div className="text-md mt-2 flex w-full justify-start gap-4 font-body font-semibold">
-              <button className="rounded-md bg-gray-800 p-1 text-white hover:text-amber-400">
+              <button className="rounded-md bg-gray-800 p-1 text-white hover:bg-amber-400 hover:text-gray-800">
                 GitHub
               </button>
             </div>

@@ -28,7 +28,7 @@ export default function About() {
             </p>
             <div className="mb-2 mt-8 w-fit text-start font-body text-lg hover:text-amber-400">
               <a
-                href="/docs/Henry_Tran_CV.pdf"
+                href="/docs/Henry_Tran_CV_online.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
