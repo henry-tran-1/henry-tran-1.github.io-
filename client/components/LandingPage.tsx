@@ -20,12 +20,12 @@ export default function LandingPage() {
             <p className="font-md my-2 text-left font-heading text-7xl">
               henry tran
             </p>
-            <p className="text-right font-body text-xl font-thin">
+            <p className="text-left font-body text-xl font-thin">
               FULL-STACK SOFTWARE DEVELOPER
             </p>
           </section>
         </div>
-        <div className="mt-4">
+        <div className="mt-4 flex w-full flex-col items-start">
           <p className="text-left font-heading text-2xl opacity-60">
             previously an optometrist...
           </p>

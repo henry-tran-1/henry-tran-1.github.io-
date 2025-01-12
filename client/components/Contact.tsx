@@ -11,7 +11,7 @@ export default function Contact() {
         <form
           action="https://formsubmit.co/ce16c5967906b4759d3d78a349946b8f"
           method="POST"
-          className="flex w-3/4 flex-col"
+          className="mb-24 flex w-3/4 flex-col"
         >
           <section className="mb-6 flex gap-6 ">
             <div className="flex w-full flex-col">

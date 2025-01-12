@@ -111,6 +111,8 @@ export default function Projects() {
           </div>
         </section>
 
+        <hr className="my-4 w-3/5 border-t border-gray-600" />
+
         {/* Bite Share */}
         <section className="my-20 flex w-full items-center justify-around">
           <div className="relative w-[450px]">
@@ -168,6 +170,8 @@ export default function Projects() {
             </div>
           </div>
         </section>
+
+        <hr className="my-4 w-3/5 border-t border-gray-600" />
 
         {/* Task Manager */}
         <section className="mb-10 mt-20 flex w-full items-center justify-around">
