@@ -26,7 +26,7 @@ export default function About() {
               out on the disc golf course, or in my garden struggling with the
               weeds.
             </p>
-            <div className="mb-2 mt-8 text-start font-body text-lg hover:text-amber-400">
+            <div className="mb-2 mt-8 w-fit text-start font-body text-lg hover:text-amber-400">
               <a
                 href="/docs/Henry_Tran_CV.pdf"
                 target="_blank"
