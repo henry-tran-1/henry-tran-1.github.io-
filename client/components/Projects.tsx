@@ -61,14 +61,14 @@ export default function Projects() {
         <h1 className="mb-2 font-heading text-7xl">projects</h1>
 
         {/* Family Mapper */}
-        <section className="my-20 flex w-full items-center justify-around">
-          <div className="w-[500px]">
-            <h2 className="my-8 text-left font-heading text-2xl font-thin">
-              PERSONAL PROJECT
-            </h2>
-            <h1 className="my-4 text-left font-heading text-4xl">
+        <section className="my-20 flex w-full items-start justify-between">
+          <div className="mr-2 w-[450px]">
+            <h1 className="mb-4 text-left font-heading text-4xl">
               Family Mapper
             </h1>
+            <h2 className="mb-8 text-left font-heading text-xl font-thin">
+              PERSONAL PROJECT
+            </h2>
             <p className="text-left font-body text-lg font-thin">
               Family mapper is an interactive app that enables users to
               visualise and expand their family tree. It makes use of recursive
@@ -86,11 +86,11 @@ export default function Projects() {
               </a>
             </div>
           </div>
-          <div className="relative w-[350px]">
+          <div className="relative ml-10 w-[350px] rounded-md border-2 border-black">
             <img
               src={`/images/family_mapper_${familyMapper}.jpg`}
               alt="family mapper gallery"
-              className="ml-8 "
+              className="rounded-sm"
             />
             <button
               className="absolute -right-10 top-1/2"
@@ -99,7 +99,7 @@ export default function Projects() {
               <img src="/images/right.svg" alt="next button" className="w-8" />
             </button>
             <button
-              className="absolute -left-2 top-1/2"
+              className="absolute -left-10 top-1/2"
               onClick={handleFamilyMapperPrev}
             >
               <img
@@ -114,15 +114,15 @@ export default function Projects() {
         <hr className="my-4 w-3/5 border-t border-gray-600" />
 
         {/* Bite Share */}
-        <section className="my-20 flex w-full items-center justify-around">
-          <div className="relative w-[450px]">
+        <section className="my-20 flex w-full items-start justify-between">
+          <div className="relative mr-10 w-[450px] rounded-md border-2 border-black">
             <img
               src={`/images/bite_share_${biteShare}.jpg`}
               alt="bite share gallery"
-              className="mr-8"
+              className="rounded-md"
             />
             <button
-              className="absolute -right-2 top-1/2"
+              className="absolute -right-10 top-1/2"
               onClick={handleBiteshareNext}
             >
               <img src="/images/right.svg" alt="next button" className="w-8" />
@@ -138,11 +138,11 @@ export default function Projects() {
               />
             </button>
           </div>
-          <div className="w-[500px]">
-            <h2 className="my-8 text-left font-heading text-2xl font-thin">
-              GROUP PROJECT - PRODUCT OWNER
+          <div className="ml-2 w-[450px]">
+            <h1 className="mb-4 text-left font-heading text-4xl">Bite Share</h1>
+            <h2 className="mb-8 text-left font-heading text-xl font-thin">
+              GROUP PROJECT (PRODUCT OWNER)
             </h2>
-            <h1 className="my-4 text-left font-heading text-4xl">Bite Share</h1>
             <p className="text-left font-body text-lg font-thin">
               Bite Share is a web application designed to foster community
               connections by matching individuals or organizations willing to
@@ -174,14 +174,14 @@ export default function Projects() {
         <hr className="my-4 w-3/5 border-t border-gray-600" />
 
         {/* Task Manager */}
-        <section className="mb-10 mt-20 flex w-full items-center justify-around">
-          <div className="w-[500px]">
-            <h2 className="my-8 text-left font-heading text-2xl font-thin">
+        <section className="mb-10 mt-20 flex w-full items-start justify-between">
+          <div className="w-[450px]">
+            <h1 className="mb-4 text-left font-heading text-4xl">
+              Task Manager (TBC)
+            </h1>
+            <h2 className="mb-8 text-left font-heading text-xl font-thin">
               PERSONAL PROJECT
             </h2>
-            <h1 className="my-4 text-left font-heading text-4xl">
-              Task Manager
-            </h1>
             <p className="text-left font-body text-lg font-thin">
               Task manager is a simple productivity app designed to help users
               stay organised and on track of their tasks.
@@ -192,11 +192,11 @@ export default function Projects() {
               </button>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative ml-10 rounded-md border-2 border-black">
             <img
               src={`/images/task_manager_${taskManager}.png`}
               alt="task manager gallery"
-              className="ml-8 h-[250px]"
+              className="ml-8 h-[250px] rounded-md"
             />
             <button
               className="absolute -right-10 top-1/2"
@@ -205,7 +205,7 @@ export default function Projects() {
               <img src="/images/right.svg" alt="next button" className="w-8" />
             </button>
             <button
-              className="absolute -left-2 top-1/2"
+              className="absolute -left-10 top-1/2"
               onClick={handleTaskManagerPrev}
             >
               <img
