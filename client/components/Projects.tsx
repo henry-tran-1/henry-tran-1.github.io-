@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
@@ -7,6 +10,10 @@ export default function Projects() {
   const [familyMapper, setFamilyMapper] = useState(0)
   const [taskManager, setTaskManager] = useState(0)
 
+  // state to handle modal/lightbox
+  const [isImageOpen, setIsImageOpen] = useState(false)
+  const [currentImage, setCurrentImage] = useState('')
+
   const handleScroll = () => {
     const element = document.getElementById('about')
     element?.scrollIntoView({ behavior: 'smooth' })
@@ -15,15 +22,17 @@ export default function Projects() {
   // next and prev buttons for family mapper carousel
   const handleFamilyMapperNext = () => {
     setFamilyMapper((prev) => {
-      if (prev === 3) return 0
-      else return prev + 1
+      const newIndex = prev === 3 ? 0 : prev + 1
+      setCurrentImage(`/images/family_mapper_${newIndex}.jpg`)
+      return newIndex
     })
     console.log(familyMapper)
   }
   const handleFamilyMapperPrev = () => {
     setFamilyMapper((prev) => {
-      if (prev === 0) return 3
-      else return prev - 1
+      const newIndex = prev === 3 ? 0 : prev - 1
+      setCurrentImage(`/images/family_mapper_${newIndex}.jpg`)
+      return newIndex
     })
   }
 
@@ -53,6 +62,12 @@ export default function Projects() {
       if (prev === 0) return 2
       else return prev - 1
     })
+  }
+
+  // handles modal/lightbox
+  const handleOpenImage = () => {
+    setCurrentImage(`/images/family_mapper_${familyMapper}.jpg`)
+    setIsImageOpen(true)
   }
 
   return (
@@ -90,7 +105,8 @@ export default function Projects() {
             <img
               src={`/images/family_mapper_${familyMapper}.jpg`}
               alt="family mapper gallery"
-              className="rounded-sm"
+              className="cursor-pointer rounded-sm"
+              onClick={() => handleOpenImage()}
             />
             <button
               className="absolute -right-10 top-1/2"
@@ -110,6 +126,47 @@ export default function Projects() {
             </button>
           </div>
         </section>
+
+        {isImageOpen && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+            onClick={() => setIsImageOpen(false)}
+          >
+            <div className="relative" onClick={(e) => e.stopPropagation()}>
+              <img
+                src={currentImage}
+                alt="enlarged view"
+                className="max-h-[90vh] max-w-[90vw] rounded-md"
+              />
+              <button
+                onClick={() => setIsImageOpen(false)}
+                className="absolute right-0 top-0 p-4 text-xl font-bold text-white"
+              >
+                X
+              </button>
+              <button
+                className="absolute right-2 top-1/2"
+                onClick={handleFamilyMapperNext}
+              >
+                <img
+                  src="/images/right.svg"
+                  alt="next button"
+                  className="w-8"
+                />
+              </button>
+              <button
+                className="absolute left-2 top-1/2"
+                onClick={handleFamilyMapperPrev}
+              >
+                <img
+                  src="/images/left.svg"
+                  alt="previous button"
+                  className="w-8"
+                />
+              </button>
+            </div>
+          </div>
+        )}
 
         <hr className="my-4 w-3/5 border-t border-gray-600" />
 
