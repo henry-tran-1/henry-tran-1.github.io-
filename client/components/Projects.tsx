@@ -10,10 +10,19 @@ export default function Projects() {
   const [familyMapper, setFamilyMapper] = useState(0)
   const [taskManager, setTaskManager] = useState(0)
 
-  // state to handle modal/lightbox
-  const [isImageOpen, setIsImageOpen] = useState(false)
-  const [currentImage, setCurrentImage] = useState('')
+  // state to handle modal lightbox for family mapper
+  const [isImageOpenFM, setIsImageOpenFM] = useState(false)
+  const [currentImageFM, setCurrentImageFM] = useState('')
 
+  // state to handle modal lightbox for bite share
+  const [isImageOpenBS, setIsImageOpenBS] = useState(false)
+  const [currentImageBS, setCurrentImageBS] = useState('')
+
+  // state to handle modal lightbox for task manager
+  const [isImageOpenTM, setIsImageOpenTM] = useState(false)
+  const [currentImageTM, setCurrentImageTM] = useState('')
+
+  // handle smooth scrolling
   const handleScroll = () => {
     const element = document.getElementById('about')
     element?.scrollIntoView({ behavior: 'smooth' })
@@ -23,15 +32,14 @@ export default function Projects() {
   const handleFamilyMapperNext = () => {
     setFamilyMapper((prev) => {
       const newIndex = prev === 3 ? 0 : prev + 1
-      setCurrentImage(`/images/family_mapper_${newIndex}.jpg`)
+      setCurrentImageFM(`/images/family_mapper_${newIndex}.jpg`)
       return newIndex
     })
-    console.log(familyMapper)
   }
   const handleFamilyMapperPrev = () => {
     setFamilyMapper((prev) => {
-      const newIndex = prev === 3 ? 0 : prev - 1
-      setCurrentImage(`/images/family_mapper_${newIndex}.jpg`)
+      const newIndex = prev === 0 ? 3 : prev - 1
+      setCurrentImageFM(`/images/family_mapper_${newIndex}.jpg`)
       return newIndex
     })
   }
@@ -39,35 +47,51 @@ export default function Projects() {
   // next and prev buttons for bite share carousel
   const handleBiteshareNext = () => {
     setBiteShare((prev) => {
-      if (prev === 3) return 0
-      else return prev + 1
+      const newIndex = prev === 3 ? 0 : prev + 1
+      setCurrentImageBS(`/images/bite_share_${newIndex}.jpg`)
+      return newIndex
     })
   }
   const handleBitesharePrev = () => {
     setBiteShare((prev) => {
-      if (prev === 0) return 3
-      else return prev - 1
+      const newIndex = prev === 0 ? 3 : prev - 1
+      setCurrentImageBS(`/images/bite_share_${newIndex}.jpg`)
+      return newIndex
     })
   }
 
   // next and prev buttons for task manager carousel
   const handleTaskManagerNext = () => {
     setTaskManager((prev) => {
-      if (prev === 2) return 0
-      else return prev + 1
+      const newIndex = prev === 2 ? 0 : prev + 1
+      setCurrentImageTM(`/images/task_manager_${newIndex}.png`)
+      return newIndex
     })
   }
   const handleTaskManagerPrev = () => {
     setTaskManager((prev) => {
-      if (prev === 0) return 2
-      else return prev - 1
+      const newIndex = prev === 0 ? 2 : prev - 1
+      setCurrentImageTM(`/images/task_manager_${newIndex}.png`)
+      return newIndex
     })
   }
 
-  // handles modal/lightbox
-  const handleOpenImage = () => {
-    setCurrentImage(`/images/family_mapper_${familyMapper}.jpg`)
-    setIsImageOpen(true)
+  // handles modal lightbox for FM
+  const handleOpenImageFM = () => {
+    setCurrentImageFM(`/images/family_mapper_${familyMapper}.jpg`)
+    setIsImageOpenFM(true)
+  }
+
+  // handles modal lightbox for BS
+  const handleOpenImageBS = () => {
+    setCurrentImageBS(`/images/bite_share_${biteShare}.jpg`)
+    setIsImageOpenBS(true)
+  }
+
+  // handles modal lightbox for TM
+  const handleOpenImageTM = () => {
+    setCurrentImageTM(`/images/task_manager_${taskManager}.png`)
+    setIsImageOpenTM(true)
   }
 
   return (
@@ -106,7 +130,7 @@ export default function Projects() {
               src={`/images/family_mapper_${familyMapper}.jpg`}
               alt="family mapper gallery"
               className="cursor-pointer rounded-sm"
-              onClick={() => handleOpenImage()}
+              onClick={() => handleOpenImageFM()}
             />
             <button
               className="absolute -right-10 top-1/2"
@@ -127,19 +151,19 @@ export default function Projects() {
           </div>
         </section>
 
-        {isImageOpen && (
+        {isImageOpenFM && (
           <div
             className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
-            onClick={() => setIsImageOpen(false)}
+            onClick={() => setIsImageOpenFM(false)}
           >
             <div className="relative" onClick={(e) => e.stopPropagation()}>
               <img
-                src={currentImage}
+                src={currentImageFM}
                 alt="enlarged view"
                 className="max-h-[90vh] max-w-[90vw] rounded-md"
               />
               <button
-                onClick={() => setIsImageOpen(false)}
+                onClick={() => setIsImageOpenFM(false)}
                 className="absolute right-0 top-0 p-4 text-xl font-bold text-white"
               >
                 X
@@ -176,7 +200,8 @@ export default function Projects() {
             <img
               src={`/images/bite_share_${biteShare}.jpg`}
               alt="bite share gallery"
-              className="rounded-md"
+              className="cursor-pointer rounded-md"
+              onClick={() => handleOpenImageBS()}
             />
             <button
               className="absolute -right-10 top-1/2"
@@ -228,6 +253,47 @@ export default function Projects() {
           </div>
         </section>
 
+        {isImageOpenBS && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+            onClick={() => setIsImageOpenBS(false)}
+          >
+            <div className="relative" onClick={(e) => e.stopPropagation()}>
+              <img
+                src={currentImageBS}
+                alt="enlarged view"
+                className="max-h-[90vh] max-w-[90vw] rounded-md"
+              />
+              <button
+                onClick={() => setIsImageOpenBS(false)}
+                className="absolute right-0 top-0 p-4 text-xl font-bold text-white"
+              >
+                X
+              </button>
+              <button
+                className="absolute right-2 top-1/2"
+                onClick={handleBiteshareNext}
+              >
+                <img
+                  src="/images/right.svg"
+                  alt="next button"
+                  className="w-8"
+                />
+              </button>
+              <button
+                className="absolute left-2 top-1/2"
+                onClick={handleBitesharePrev}
+              >
+                <img
+                  src="/images/left.svg"
+                  alt="previous button"
+                  className="w-8"
+                />
+              </button>
+            </div>
+          </div>
+        )}
+
         <hr className="my-4 w-3/5 border-t border-gray-600" />
 
         {/* Task Manager */}
@@ -253,7 +319,8 @@ export default function Projects() {
             <img
               src={`/images/task_manager_${taskManager}.png`}
               alt="task manager gallery"
-              className="ml-8 h-[250px] rounded-md"
+              className="ml-8 h-[250px] cursor-pointer rounded-md"
+              onClick={() => handleOpenImageTM()}
             />
             <button
               className="absolute -right-10 top-1/2"
@@ -273,6 +340,48 @@ export default function Projects() {
             </button>
           </div>
         </section>
+
+        {isImageOpenTM && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+            onClick={() => setIsImageOpenTM(false)}
+          >
+            <div className="relative" onClick={(e) => e.stopPropagation()}>
+              <img
+                src={currentImageTM}
+                alt="enlarged view"
+                className="max-h-[90vh] max-w-[90vw] rounded-md"
+              />
+              <button
+                onClick={() => setIsImageOpenTM(false)}
+                className="absolute right-0 top-0 p-4 text-xl font-bold text-white"
+              >
+                X
+              </button>
+              <button
+                className="absolute right-2 top-1/2"
+                onClick={handleTaskManagerNext}
+              >
+                <img
+                  src="/images/right.svg"
+                  alt="next button"
+                  className="w-8"
+                />
+              </button>
+              <button
+                className="absolute left-2 top-1/2"
+                onClick={handleTaskManagerPrev}
+              >
+                <img
+                  src="/images/left.svg"
+                  alt="previous button"
+                  className="w-8"
+                />
+              </button>
+            </div>
+          </div>
+        )}
+
         <button onClick={handleScroll} className="mb-40 mt-8">
           <FontAwesomeIcon
             icon={faCaretDown}
