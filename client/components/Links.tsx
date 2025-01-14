@@ -9,7 +9,7 @@ export default function Links() {
         <a href="mailto:henrytran089@gmail.com">
           <FontAwesomeIcon
             icon={faEnvelope}
-            className="text-2xl duration-100 hover:text-amber-400"
+            className="text-4xl duration-100 hover:text-amber-400 lg:text-2xl"
           />
         </a>
         <a
@@ -19,7 +19,7 @@ export default function Links() {
         >
           <FontAwesomeIcon
             icon={faLinkedin}
-            className="text-2xl duration-100 hover:text-amber-400"
+            className="g:text-2xl text-4xl duration-100 hover:text-amber-400"
           />
         </a>
         <a
@@ -29,7 +29,7 @@ export default function Links() {
         >
           <FontAwesomeIcon
             icon={faGithub}
-            className="text-2xl duration-100 hover:text-amber-400"
+            className="text-4xl duration-100 hover:text-amber-400 lg:text-2xl"
           />
         </a>
       </section>
