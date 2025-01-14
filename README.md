@@ -1,28 +1,4 @@
-# Phase 1 Boilerplate (+ Tailwind)
+# Henry's Portfolio
 
-## Packages Included
-
-- react
-- react-router-dom
-- @tanstack/react-query
-- vite
-- vitest
-- eslint
-- tailwind
-
-## Setup
-
-- [ ] Clone this repo, navigate to it, install packages, and start the server with `npm run dev`
-  <details style="padding-left: 2em">
-    <summary>Tip</summary>
-
-  ```sh
-  npm install
-  npm run dev
-  ```
-
-  </details>
-
----
-
-[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=boilerplate-phase1)
+Welcome to my portfolio!  I'm Henry, a full-stack developer based in Auckland, NZ.  
+Explore my work and feel free to reach out if you have any questions or want to collaborate!
