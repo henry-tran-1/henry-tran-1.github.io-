@@ -8,7 +8,10 @@ export default function LandingPage() {
   }
 
   return (
-    <div id="home" className="flex h-screen items-center justify-center">
+    <div
+      id="home"
+      className="flex h-screen items-center justify-center overflow-hidden"
+    >
       <div className="flex w-4/6 flex-col items-center justify-center text-center">
         <div className="w-full lg:mb-8 lg:flex lg:items-center lg:justify-center">
           <img
