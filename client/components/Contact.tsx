@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <div id="contact" className="flex items-center justify-center">
       <div className="justify-centertext-center flex w-4/6 flex-col items-center">
-        <h1 className="mb-10 font-heading text-7xl">contact me</h1>
+        <h1 className="mb-10 font-heading text-5xl lg:text-7xl">contact me</h1>
         <h3 className="mb-10 w-3/4 font-body text-lg font-thin">
           Feel free to reach out if you&apos;d like to work together, chat about
           coding, or want to go throw some frisbees!

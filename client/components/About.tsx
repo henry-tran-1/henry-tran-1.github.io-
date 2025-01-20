@@ -6,38 +6,43 @@ export default function About() {
   return (
     <div id="about" className="flex items-center justify-center ">
       <div className="flex w-4/6 flex-col items-center justify-center text-center">
-        <h1 className="mb-10 font-heading text-7xl">about me</h1>
-        <div className="mb-8 flex items-start justify-center">
+        <h1 className="mb-8 font-heading text-5xl lg:text-7xl">about me</h1>
+        <div className="mb-8 items-start justify-center lg:flex">
           <img
             src="/images/about_me.jpg"
             alt="henry in the garden"
-            className="w-[350px]"
+            className="mb-4 w-[350px] lg:mb-0"
           />
-          <section className="mx-16">
-            <p className="mb-4 text-start font-body text-lg font-thin">
+          <section className="lg:mx-16">
+            <p className="mb-4 text-start font-body text-base font-thin lg:text-lg">
               Hi! I’m a full-stack developer based in Auckland with a unique
               background in optometry and academia. My journey from healthcare
               to software development combines a passion for solving real-world
               problems, collaborating with teams, and building impactful
               solutions.
             </p>
-            <p className="text-start font-body text-lg font-thin">
+            <p className="text-start font-body text-base font-thin lg:text-lg">
               When I&apos;m not behind the screen, you can find me struggling
               out on the disc golf course, or in my garden struggling with the
               weeds.
             </p>
-            <div className="mb-2 mt-8 w-fit text-start font-body text-lg hover:text-amber-400">
-              <a
-                href="/docs/Henry_Tran_CV_online.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Resume
-              </a>
-              <FontAwesomeIcon icon={faUpRightFromSquare} className="ml-1.5" />
-            </div>
-            <div>
-              <Links />
+            <div className="mb-2 mt-8 flex items-center gap-8 ">
+              <div className="text-start font-body text-lg hover:text-amber-400">
+                <a
+                  href="/docs/Henry_Tran_CV_online.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Resume
+                </a>
+                <FontAwesomeIcon
+                  icon={faUpRightFromSquare}
+                  className="ml-1.5"
+                />
+              </div>
+              <div>
+                <Links />
+              </div>
             </div>
           </section>
         </div>

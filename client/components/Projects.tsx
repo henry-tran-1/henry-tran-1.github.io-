@@ -97,7 +97,7 @@ export default function Projects() {
   return (
     <div id="projects" className="flex w-full items-center justify-center">
       <div className="flex w-4/6 flex-col items-center text-center">
-        <h1 className="mb-2 font-heading text-7xl">projects</h1>
+        <h1 className="mb-2 font-heading text-5xl lg:text-7xl">projects</h1>
 
         {/* Family Mapper */}
         <section className="my-20 flex w-full items-start justify-between">
