@@ -382,7 +382,7 @@ export default function Projects() {
           </div>
         )}
 
-        <button onClick={handleScroll} className="mb-40 mt-8">
+        <button onClick={handleScroll} className="mb-28 mt-8">
           <FontAwesomeIcon
             icon={faCaretDown}
             className="animate-bounceChevron text-4xl text-amber-400 duration-100 hover:text-black"

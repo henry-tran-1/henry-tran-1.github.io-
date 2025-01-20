@@ -48,75 +48,75 @@ export default function About() {
         </div>
 
         {/* Toolkit Section */}
-        <h1 className="m-10 font-heading text-7xl">toolkit</h1>
-        <section className="mb-40 flex flex-wrap">
-          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+        <h1 className="m-10 font-heading text-5xl lg:text-7xl">toolkit</h1>
+        <section className="mb-28 flex flex-wrap justify-around">
+          <div className="mx-5 my-2 flex w-10 flex-col items-center lg:mx-10 lg:w-14">
             <img
               src="/images/toolkit/javascript-color.svg"
               alt="javascript logo"
             />
-            <p className="mt-1 font-body text-lg">Javascript</p>
+            <p className="mt-1 font-body text-base">Javascript</p>
           </div>
-          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+          <div className="mx-5 my-2 flex w-10 flex-col items-center lg:mx-10 lg:w-14">
             <img
               src="/images/toolkit/typescript-color.svg"
               alt="typescript logo"
             />
-            <p className="mt-1 font-body text-lg">Typescript</p>
+            <p className="mt-1 font-body text-base">Typescript</p>
           </div>
-          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+          <div className="mx-5 my-2 flex w-10 flex-col items-center lg:mx-10 lg:w-14">
             <img src="/images/toolkit/react-color.svg" alt="react logo" />
-            <p className="mt-1 font-body text-lg">React</p>
+            <p className="mt-1 font-body text-base">React</p>
           </div>
-          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+          <div className="mx-5 my-2 flex w-10 flex-col items-center lg:mx-10 lg:w-14">
             <img src="/images/toolkit/html5-color.svg" alt="HTML logo" />
-            <p className="mt-1 font-body text-lg">HTML5</p>
+            <p className="mt-1 font-body text-base">HTML5</p>
           </div>
-          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+          <div className="mx-5 my-2 flex w-10 flex-col items-center lg:mx-10 lg:w-14">
             <img src="/images/toolkit/css3-color.svg" alt="CSS logo" />
-            <p className="mt-1 font-body text-lg">CSS3</p>
+            <p className="mt-1 font-body text-base">CSS3</p>
           </div>
-          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+          <div className="mx-5 my-2 flex w-10 flex-col items-center lg:mx-10 lg:w-14">
             <img
               src="/images/toolkit/tailwindcss-color.svg"
               alt="tailwind logo"
             />
-            <p className="mt-1 font-body text-lg">Tailwind CSS</p>
+            <p className="mt-1 font-body text-base">Tailwind CSS</p>
           </div>
-          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+          <div className="mx-5 my-2 flex w-10 flex-col items-center lg:mx-10 lg:w-14">
             <img src="/images/toolkit/nodedotjs-color.svg" alt="node logo" />
-            <p className="mt-1 font-body text-lg">Node.js</p>
+            <p className="mt-1 font-body text-base">Node.js</p>
           </div>
-          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+          <div className="mx-5 my-2 flex w-10 flex-col items-center lg:mx-10 lg:w-14">
             <img src="/images/toolkit/express-color.svg" alt="express logo" />
-            <p className="mt-1 font-body text-lg">Express.js</p>
+            <p className="mt-1 font-body text-base">Express.js</p>
           </div>
-          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+          <div className="mx-5 my-2 flex w-10 flex-col items-center lg:mx-10 lg:w-14">
             <img src="/images/toolkit/sqlite-color.svg" alt="sqlite logo" />
-            <p className="mt-1 font-body text-lg">Sqlite</p>
+            <p className="mt-1 font-body text-base">Sqlite</p>
           </div>
-          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+          <div className="mx-5 my-2 flex w-10 flex-col items-center lg:mx-10 lg:w-14">
             <img src="/images/toolkit/Knex.js.svg" alt="knex logo" />
-            <p className="mt-1 font-body text-lg">Knex.js</p>
+            <p className="mt-1 font-body text-base">Knex.js</p>
           </div>
-          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+          <div className="mx-5 my-2 flex w-10 flex-col items-center lg:mx-10 lg:w-14">
             <img src="/images/toolkit/auth0-color.svg" alt="auth0 logo" />
-            <p className="mt-1 font-body text-lg">Auth0</p>
+            <p className="mt-1 font-body text-base">Auth0</p>
           </div>
-          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+          <div className="mx-5 my-2 flex w-10 flex-col items-center lg:mx-10 lg:w-14">
             <img src="/images/toolkit/vitest-color.svg" alt="vitest logo" />
-            <p className="mt-1 font-body text-lg">Vitest</p>
+            <p className="mt-1 font-body text-base">Vitest</p>
           </div>
-          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+          <div className="mx-5 my-2 flex w-10 flex-col items-center lg:mx-10 lg:w-14">
             <img
               src="/images/toolkit/storybook-color.svg"
               alt="storybook logo"
             />
-            <p className="mt-1 font-body text-lg">Storybook</p>
+            <p className="mt-1 font-body text-base">Storybook</p>
           </div>
-          <div className="mx-10 my-2 flex w-14 flex-col items-center">
+          <div className="mx-5 my-2 flex w-10 flex-col items-center lg:mx-10 lg:w-14">
             <img src="/images/toolkit/python-color.svg" alt="python logo" />
-            <p className="mt-1 font-body text-lg">Python</p>
+            <p className="mt-1 font-body text-base">Python</p>
           </div>
         </section>
       </div>
