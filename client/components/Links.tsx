@@ -5,11 +5,11 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 export default function Links() {
   return (
     <div>
-      <section className="flex gap-4 font-body font-thin">
+      <section className="flex h-full items-center justify-center gap-4 font-body font-thin">
         <a href="mailto:henrytran089@gmail.com">
           <FontAwesomeIcon
             icon={faEnvelope}
-            className="text-2xl duration-100 hover:text-amber-400"
+            className="text-4xl duration-100 hover:text-amber-400 lg:text-2xl"
           />
         </a>
         <a
@@ -19,7 +19,7 @@ export default function Links() {
         >
           <FontAwesomeIcon
             icon={faLinkedin}
-            className="text-2xl duration-100 hover:text-amber-400"
+            className="text-4xl duration-100 hover:text-amber-400 lg:text-2xl"
           />
         </a>
         <a
@@ -29,7 +29,7 @@ export default function Links() {
         >
           <FontAwesomeIcon
             icon={faGithub}
-            className="text-2xl duration-100 hover:text-amber-400"
+            className="text-4xl duration-100 hover:text-amber-400 lg:text-2xl"
           />
         </a>
       </section>
