@@ -97,24 +97,26 @@ export default function Projects() {
   return (
     <div id="projects" className="flex w-full items-center justify-center">
       <div className="flex w-4/6 flex-col items-center text-center">
-        <h1 className="mb-2 font-heading text-5xl lg:text-7xl">projects</h1>
+        <h1 className="mb-10 font-heading text-5xl lg:mb-20 lg:text-7xl">
+          projects
+        </h1>
 
         {/* Family Mapper */}
-        <section className="my-20 flex w-full items-start justify-between">
-          <div className="mr-2 w-[450px]">
-            <h1 className="mb-4 text-left font-heading text-4xl">
+        <section className="mb-20 flex w-full flex-col items-start justify-between lg:flex-row">
+          <div className="mr-2 lg:w-[450px]">
+            <h1 className="mb-4 text-left font-heading text-2xl">
               Family Mapper
             </h1>
-            <h2 className="mb-8 text-left font-heading text-xl font-thin">
+            <h2 className="mb-4 text-left font-heading text-base font-thin lg:mb-8">
               PERSONAL PROJECT
             </h2>
-            <p className="text-left font-body text-lg font-thin">
+            <p className="text-left font-body text-base font-thin">
               Family mapper is an interactive app that enables users to
               visualise and expand their family tree. It makes use of recursive
               data querying to dynamically render connections between all family
               members.
             </p>
-            <div className="text-md mt-4 flex w-full justify-start gap-4 font-body font-semibold">
+            <div className="my-2 flex w-full justify-start gap-4 font-body text-base font-semibold lg:mt-4">
               <a
                 href="https://github.com/henry-tran-1/family-mapper"
                 target="_blank"
@@ -125,7 +127,7 @@ export default function Projects() {
               </a>
             </div>
           </div>
-          <div className="relative ml-10 w-[350px] rounded-md border-2 border-black">
+          <div className="relative mx-2 rounded-md border-2 border-black lg:mx-0 lg:ml-10 lg:w-[350px]">
             <img
               src={`/images/family_mapper_${familyMapper}.jpg`}
               alt="family mapper gallery"
@@ -164,7 +166,7 @@ export default function Projects() {
               />
               <button
                 onClick={() => setIsImageOpenFM(false)}
-                className="absolute right-0 top-0 p-4 text-xl font-bold text-white"
+                className="absolute right-0 top-0 border-black p-4 text-2xl font-bold text-black"
               >
                 X
               </button>
@@ -195,8 +197,8 @@ export default function Projects() {
         <hr className="my-4 w-3/5 border-t border-gray-600" />
 
         {/* Bite Share */}
-        <section className="my-20 flex w-full items-start justify-between">
-          <div className="relative mr-10 w-[450px] rounded-md border-2 border-black">
+        <section className="my-20 flex w-full flex-col-reverse items-start justify-between lg:flex-row">
+          <div className="relative mx-2 rounded-md border-2 border-black lg:mx-0 lg:ml-10 lg:w-[350px]">
             <img
               src={`/images/bite_share_${biteShare}.jpg`}
               alt="bite share gallery"
@@ -220,19 +222,19 @@ export default function Projects() {
               />
             </button>
           </div>
-          <div className="ml-2 w-[450px]">
-            <h1 className="mb-4 text-left font-heading text-4xl">Bite Share</h1>
-            <h2 className="mb-8 text-left font-heading text-xl font-thin">
+          <div className="ml-2 lg:w-[450px]">
+            <h1 className="mb-4 text-left font-heading text-2xl">Bite Share</h1>
+            <h2 className="mb-4 text-left font-heading text-base font-thin lg:mb-8">
               GROUP PROJECT (PRODUCT OWNER)
             </h2>
-            <p className="text-left font-body text-lg font-thin">
+            <p className="text-left font-body text-base font-thin">
               Bite Share is a web application designed to foster community
               connections by matching individuals or organizations willing to
               donate food with those in need. It features a static messaging
               system for simple communication, built using RESTful API CRUD
               operations.
             </p>
-            <div className="text-md mt-2 flex w-full justify-start gap-4 font-body font-semibold">
+            <div className="my-2 flex w-full justify-start gap-4 font-body text-base font-semibold lg:mt-4">
               <a
                 href="https://bite-share-pohutukawa24.devacademy.nz/"
                 target="_blank"
@@ -266,7 +268,7 @@ export default function Projects() {
               />
               <button
                 onClick={() => setIsImageOpenBS(false)}
-                className="absolute right-0 top-0 p-4 text-xl font-bold text-white"
+                className="absolute right-0 top-0 border-black p-4 text-2xl font-bold text-black"
               >
                 X
               </button>
@@ -297,29 +299,29 @@ export default function Projects() {
         <hr className="my-4 w-3/5 border-t border-gray-600" />
 
         {/* Task Manager */}
-        <section className="mb-10 mt-20 flex w-full items-start justify-between">
-          <div className="w-[450px]">
-            <h1 className="mb-4 text-left font-heading text-4xl">
+        <section className="my-20 flex w-full flex-col items-start justify-between lg:flex-row">
+          <div className="mr-2 lg:w-[450px]">
+            <h1 className="mb-4 text-left font-heading text-2xl">
               Task Manager (TBC)
             </h1>
-            <h2 className="mb-8 text-left font-heading text-xl font-thin">
+            <h2 className="mb-4 text-left font-heading text-base font-thin lg:mb-8">
               PERSONAL PROJECT
             </h2>
-            <p className="text-left font-body text-lg font-thin">
+            <p className="text-left font-body text-base font-thin">
               Task manager is a simple productivity app designed to help users
               stay organised and on track of their tasks.
             </p>
-            <div className="text-md mt-2 flex w-full justify-start gap-4 font-body font-semibold">
+            <div className="my-2 flex w-full justify-start gap-4 font-body text-base font-semibold lg:mt-4">
               <button className="rounded-md bg-gray-800 p-1 text-white hover:bg-amber-400 hover:text-gray-800">
                 GitHub
               </button>
             </div>
           </div>
-          <div className="relative ml-10 rounded-md border-2 border-black">
+          <div className="relative mx-2 rounded-md border-2 border-black lg:mx-0 lg:ml-10 lg:w-[350px]">
             <img
               src={`/images/task_manager_${taskManager}.png`}
               alt="task manager gallery"
-              className="ml-8 h-[250px] cursor-pointer rounded-md"
+              className="cursor-pointer rounded-sm"
               onClick={() => handleOpenImageTM()}
             />
             <button
@@ -354,7 +356,7 @@ export default function Projects() {
               />
               <button
                 onClick={() => setIsImageOpenTM(false)}
-                className="absolute right-0 top-0 p-4 text-xl font-bold text-white"
+                className="absolute right-0 top-0 border-black p-4 text-2xl font-bold text-black"
               >
                 X
               </button>
